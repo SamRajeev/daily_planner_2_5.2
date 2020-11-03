@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Home extends StatefulWidget {
+  Home({Key key}) : super(key: key);
   @override
   _HomeState createState() => _HomeState();
 }
@@ -10,24 +11,26 @@ class Home extends StatefulWidget {
 
 
 class _HomeState extends State<Home> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  void _openDrawer() {
+    _scaffoldKey.currentState.openDrawer();
+  }
+
+  void _closeDrawer() {
+    Navigator.of(context).pop();
+  }
+
+  String HelpText;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key:_scaffoldKey,
         appBar: AppBar(
           backgroundColor: Colors.blue,
           elevation: 0.0,
           actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(300, 0.0, 0.0, 0.0),
-              child: FlatButton.icon(
-                label: Text('Help'),
-                icon:Icon(Icons.info),
-                onPressed: (){
-
-                },
-              ),
-            )
 
           ],
         ),
@@ -36,7 +39,7 @@ class _HomeState extends State<Home> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.fromLTRB(4.0, 10.0, 100.0, 0.0),
+              padding: const EdgeInsets.fromLTRB(4.0, 5.0, 100.0, 0.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:<Widget>[
@@ -80,8 +83,29 @@ class _HomeState extends State<Home> {
               ),
             )],
         ),
-      )
+      ),
+      drawer:  Drawer(
+
+        child: ListView(
+
+          children: <Widget>[
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text("Help"),
+              onTap: (){HelpTextContent;},
+            ),
+            Text(HelpText)
+
+          ],
+        )
+      ),
+      // Disable opening the drawer with a swipe gesture.
+      drawerEnableOpenDragGesture: false,
     );
+
+  }
+  HelpTextContent(){
+
   }
 }
 
