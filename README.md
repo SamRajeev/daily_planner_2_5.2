@@ -7,11 +7,11 @@ Helps you plan your Day with ease. You can shedule your events and it reminds yo
 First make sure you have the applications given in the requirements.txt
 Then run he file after downloading.
 
-##How it works ?
+###How it works ?
 
 The time you schedule a event it gets updated in SharedPreferences database later when you come to add you get reminded of the event.
 
-##Packages used
+####Packages used
 shared_preferences: ^0.5.12+2
 intl: ^0.16.1
 syncfusion_flutter_calendar: ^18.3.44
