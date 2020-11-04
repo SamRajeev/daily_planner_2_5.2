@@ -21,6 +21,7 @@ class _PlannerState extends State<Planner> {
   List<Meeting> meetings;
   SharedPreferences prefs;
   List<List> meetings2;
+  String HelpText = " ";
 //  String _text;
 //  String _titleText;
 
@@ -63,6 +64,16 @@ class _PlannerState extends State<Planner> {
       appBar: AppBar(
         title: Text(time),
         centerTitle: true,
+        actions: <Widget>[
+          RaisedButton(
+            child:Icon(Icons.arrow_back),
+            color: Colors.blue,
+            onPressed: (){
+              Navigator.pushNamed(context, '/');
+            },
+            elevation: 0.0,
+          )
+        ],
       ),
 
       body: SfCalendar(
@@ -97,6 +108,28 @@ class _PlannerState extends State<Planner> {
         onPressed: (){
          eventAdder();
         },
+      ),
+      drawer:  Drawer(
+
+          child: Container(
+            color: Colors.blue,
+            child: ListView(
+
+              children: <Widget>[
+                ListTile(
+                  leading: Icon(Icons.info),
+                  title: Text("Help",style: TextStyle(
+                    fontSize: 15.0
+                  ),),
+                  onTap: (){HelpTextContent();},
+                ),
+                Text(HelpText,style: TextStyle(
+                  fontSize: 15.0
+                ),)
+
+              ],
+            ),
+          )
       ),
     );
   }
@@ -222,6 +255,14 @@ class _PlannerState extends State<Planner> {
         )
       );
     }
+
+  void HelpTextContent() {
+    setState(() {
+      HelpText = "Thank you for using help\n"
+          "So all you have to do is Schedule your event.\n\n 1. Just click on the specific time\n\n"
+          " 2. Then click on the add button and \n enter your event's name\n\n 3. Save it";
+    });
+  }
   }
 
 

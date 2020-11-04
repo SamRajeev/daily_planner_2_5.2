@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
     Navigator.of(context).pop();
   }
 
-  String HelpText;
+  String HelpText = " ";
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +30,7 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           elevation: 0.0,
-          actions: <Widget>[
 
-          ],
         ),
       backgroundColor: Colors.blue,
       body: Container(
@@ -86,17 +84,37 @@ class _HomeState extends State<Home> {
       ),
       drawer:  Drawer(
 
-        child: ListView(
+        child: Container(
+          color: Colors.blue,
+          child: ListView(
 
-          children: <Widget>[
-            ListTile(
-              leading: Icon(Icons.info),
-              title: Text("Help"),
-              onTap: (){HelpTextContent;},
-            ),
-            Text(HelpText)
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(Icons.info),
+                    title: Text("About"),
+                    onTap: (){HelpTextContent();},
+                  ),
+                  color: Colors.white,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(Icons.info),
+                    title: Text("Help"),
+                    onTap: (){HelpTextContent();},
+                  ),
+                  color: Colors.white,
+                ),
+              ),
+              Text(HelpText)
 
-          ],
+            ],
+          ),
         )
       ),
       // Disable opening the drawer with a swipe gesture.
@@ -105,7 +123,12 @@ class _HomeState extends State<Home> {
 
   }
   HelpTextContent(){
-    HelpText = "SAMHI";
+    setState(() {
+      HelpText = "Thanks for using Help\n"
+
+          ;
+
+    });
   }
 }
 
