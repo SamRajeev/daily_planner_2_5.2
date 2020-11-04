@@ -105,7 +105,7 @@ class _HomeState extends State<Home> {
 
   }
   HelpTextContent(){
-
+    HelpText = "SAMHI";
   }
 }
 
