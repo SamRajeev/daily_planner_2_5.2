@@ -12,8 +12,8 @@ Then run he file after downloading.
 The time you schedule a event it gets updated in SharedPreferences database later when you come to add you get reminded of the event.
 
 ## Packages used
-shared_preferences: ^0.5.12+2
-intl: ^0.16.1
-syncfusion_flutter_calendar: ^18.3.44
+1)shared_preferences: ^0.5.12+2
+2)intl: ^0.16.1
+3)syncfusion_flutter_calendar: ^18.3.44
 
 
