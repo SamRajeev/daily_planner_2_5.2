@@ -13,7 +13,9 @@ The time you schedule a event it gets updated in SharedPreferences database late
 
 ## Packages used
 1)shared_preferences: ^0.5.12+2
+
 2)intl: ^0.16.1
+
 3)syncfusion_flutter_calendar: ^18.3.44
 
 
