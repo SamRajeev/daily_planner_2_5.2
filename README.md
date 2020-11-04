@@ -1,10 +1,15 @@
-# dailyplanner2_5
+# Daily Planner
 
-A new Flutter application.
+Helps you pan your Day with ease.You shedule your event and it reminds you of he event so you don't miss out on it.
 
-## Getting Started
+## How Can you use it ?
 
-This project is a starting point for a Flutter application.
+First make sure You have the applications given in the requirements.txt
+
+Then run he file after downloading.
+
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
