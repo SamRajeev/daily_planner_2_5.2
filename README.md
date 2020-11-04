@@ -1,16 +1,21 @@
-# dailyplanner2_5
+# Daily Planner
 
-A new Flutter application.
+Helps you plan your Day with ease. You can shedule your events and it reminds you so that you don't miss out on it.
 
-## Getting Started
+## How can you use it ?
 
-This project is a starting point for a Flutter application.
+First make sure you have the applications given in the requirements.txt
+Then run he file after downloading.
 
-A few resources to get you started if this is your first Flutter project:
+## How it works ?
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The time you schedule a event it gets updated in SharedPreferences database later when you come to add you get reminded of the event.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Packages used
+1)shared_preferences: ^0.5.12+2
+
+2)intl: ^0.16.1
+
+3)syncfusion_flutter_calendar: ^18.3.44
+
+
