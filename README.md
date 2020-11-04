@@ -1,10 +1,10 @@
 # Daily Planner
 
-Helps you pan your Day with ease.You shedule your event and it reminds you of the event so you don't miss out on it.
+Helps you plan your Day with ease. You can shedule your events and it reminds you so that you don't miss out on it.
 
-## How Can you use it ?
+## How can you use it ?
 
-First make sure You have the applications given in the requirements.txt
+First make sure you have the applications given in the requirements.txt
 
 Then run he file after downloading.
 
