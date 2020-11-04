@@ -20,4 +20,6 @@ The time you schedule a event it gets updated in SharedPreferences database late
 
 4)flutter_local_notifications: ^1.4.4+2
 
+## About
 
+Daily Planner has been developed as part of the 2nd Timathon  CodeJam project. This is a mobile app which helps the users to schedule their daily events and get reminded at the time of the event   
