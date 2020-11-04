@@ -5,11 +5,14 @@ Helps you to plan your day with ease. You can shedule your events and it reminds
 ## How can you use it ?
 
 First make sure you have the applications given in the requirements.txt
-Then run he file after downloading.
+Download and start the project.
 
 ## How it works ?
 
-The time you schedule a event it gets updated in SharedPreferences database later during the time of the event you get reminded through a notification.
+1. To schedule your event go to planner screen and select the specific time slot.
+2. Then click on the add button, enter your event's name and save it.
+3. Daily Planner main screen will list all the events scheduled for the day. 
+4. The notification feature generates alerts for events based on the time.
 
 ## Packages used
 1)shared_preferences: ^0.5.12+2
@@ -22,4 +25,4 @@ The time you schedule a event it gets updated in SharedPreferences database late
 
 ## About
 
-Daily Planner has been developed as part of the 2nd Timathon  CodeJam project. This is a mobile app which helps the users to schedule their daily events and get reminded at the time of the event   
+Daily Planner has been developed as part of the 2nd Timathon CodeJam project. This is a mobile app which helps the users to schedule their daily events and get reminded at the time of the event.  
