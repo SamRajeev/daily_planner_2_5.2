@@ -1,6 +1,6 @@
 # Daily Planner
 
-Helps you pan your Day with ease.You shedule your event and it reminds you of he event so you don't miss out on it.
+Helps you pan your Day with ease.You shedule your event and it reminds you of the event so you don't miss out on it.
 
 ## How Can you use it ?
 
